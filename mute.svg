@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- Background Circle -->
+  <circle cx="32" cy="32" r="32" fill="#1DB954"/>
+  <!-- Speaker Icon -->
+  <path d="M26 22h-6a2 2 0 00-2 2v16a2 2 0 002 2h6l10 8V14l-10 8z" fill="#fff"/>
+  <!-- Slash Line -->
+  <line x1="26" y1="26" x2="38" y2="38" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+  <line x1="38" y1="26" x2="26" y2="38" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root{
+    --a:0;
+}
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    /* background-color: black;  */
+    color: white;
+}
+
+.logo img {
+    width: 110px;
+}
+
+
+
+.left {
+    width: 25vw;
+    padding: 10px;
+}
+
+
+
+.right {
+    width: 75vw;
+}
+
+
+.home ul li {
+    width: 25px;
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding-top: 24px;
+    font-weight: bold;
+}
+
+.heading {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    padding: 14px;
+    font-size: 10px;
+    align-items: center;
+}
+
+.heading img {
+    width: 30px;
+}
+
+.library {
+    min-height: 68vh;
+    position: relative;
+}
+
+.footer {
+    display: flex;
+    font-size: 9px;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+
+}
+
+.footer a {
+    color: gray;
+}
+
+.right {
+    margin: 16px 0;
+    position: relative;
+
+
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+
+/* login and sign up buttons */
+.button-container {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Spotify login button */
+.spotify-signup {
+    background-color: #282828;
+    /* Dark button */
+    color: #ffffff;
+}
+
+.spotify-signup:hover {
+    background-color: #3e3e3e;
+    /* Slightly lighter on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+
+}
+
+/* Spotify sign-up button */
+.spotify-login {
+    background-color: white;
+    /* Spotify green */
+    color: black;
+}
+
+.spotify-login:hover {
+    background-color: white;
+    /* Slightly lighter green on hover */
+    transform: scale(1.05);
+    /* Slightly enlarge on hover */
+}
+
+.header>* {
+    padding: 20px;
+}
+
+.spotify-playlist {
+    padding: 16px;
+}
+
+.spotify-playlist h1 {
+    padding: 16px;
+}
+
+.cardcontainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px 5px;
+    max-height: 60vh;
+    overflow-y: auto;
+
+}
+
+.spotify-playlist .card {
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #252525;
+    position: relative;
+
+}
+
+.card>* {
+    padding-top: 5px;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.play {
+    position: absolute;
+    top: 150px;
+    right: 17px;
+    opacity:var(--a);
+    transition: all 1s ease-out;
+}
+.card:hover{
+    background-color: rgb(67, 66, 66);
+    cursor: pointer;
+    scale:1.03;
+    --a:1;
+    /* opacity: 1; */
+    transition: all .4s ease-out;
+}
+
+
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    /* Dark background */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #555;
+    /* Dark thumb color */
+    border-radius: 10px;
+    border: 2px solid #1e1e1e;
+    /* Matches the track color */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #888;
+    /* Lighter thumb color on hover */
+}
+
+/* For Firefox */
+html {
+    scrollbar-width: thin;
+    /* Makes the scrollbar thinner */
+    scrollbar-color: #555 #1e1e1e;
+    /* Thumb color and track color */
+}
+
+/* For Internet Explorer and Edge (legacy) */
+body {
+    -ms-overflow-style: scrollbar;
+}
+
+
+.playbar {
+    position: fixed;
+    bottom: 30px;
+    background-color: #282828;
+    border-radius: 10px;
+    width: 70%;
+    padding: 10px;
+    min-height: 40px;
+}
+
+.timevol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.songbuttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.volume {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.range input{
+    cursor: pointer;
+}
+
+.songsList ul {
+    padding: 0 12px;
+}
+
+.songsList ul li {
+    list-style-type: decimal;
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    cursor: pointer;
+    padding: 12px 0;
+    border: 1px solid white;
+    margin: 12px 0;
+    padding: 13px;
+    border-radius: 5px;
+}
+
+.songsList .info {
+    font-size: 14px;
+    width: 344px;
+}
+
+.songsList {
+    height: 480px;
+    margin-bottom: 40px;
+    overflow: auto;
+}
+
+.hamburger {
+    display: none;
+}
+
+.playnow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playnow span {
+    font-size: 13px;
+    width: 64px;
+    padding: 10px;
+}
+
+.seekbar {
+    height: 2px;
+    width: 98%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 10px;
+    border: 2px solid white;
+    margin: 6px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.circle {
+    width: 13px;
+    height: 13px;
+    border-radius: 13px;
+    background-color: white;
+    position: relative;
+    bottom: 6px;
+    left: 0%;
+    transition: left 0.5s;
+
+}
+
+.songbuttons svg {
+    cursor: pointer;
+}
+
+.abovebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 20px 0; */
+
+}
+
+.songinfo {
+    color: white;
+    padding: 0 12px;
+    width: 125px;
+}
+
+.songtime {
+    color: white;
+    padding: 0 12px;
+}
+
+.songinfo {
+    width: 250px;
+}
+
+.songinfo div {
+    word-break: break-all;
+}
+
+.close {
+    display: none;
+}
+
+@media (max-width :1200px) {
+    .left {
+        position: absolute;
+        left: -130%;
+        transition: all 0.5s;
+        z-index: 1;
+        width: 380px;
+        background-color: black;
+
+
+    }
+
+    .left .close {
+        position: absolute;
+        right: 33px;
+        top: 25px;
+        width: 30px;
+        display: block;
+        filter: invert(1);
+    }
+
+    .right {
+        width: 100vw;
+    }
+
+    .playbar {
+        width: 90vw;
+        bottom: 50px;
+        /* margin-left:10px; */
+
+    }
+
+    .seekbar {
+        width: 90vw;
+    }
+
+    .abovebar {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: inline;
+
+
+    }
+
+    .spotify-playlist .card {
+        width: 90vw;
+
+    }
+
+    .card-container {
+        margin: 0;
+        justify-content: center;
+    }
+
+    .right {
+        margin: 0;
+    }
+
+    .songinfo {
+        width: auto;
+        /* text-align:center; */
+    }
+
+    .timevol {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .songtime {
+        width: auto;
+    }
+
+    .play svg {
+        position: absolute;
+        top: 150px;
+        right: 17px;
+    }
+
+}
